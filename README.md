@@ -9,6 +9,14 @@ is, not by publish date.
 
 **Live site: [best-devbooks.github.io/kotlin-books](https://best-devbooks.github.io/kotlin-books/)**
 
+## More book lists
+
+Part of **[best-devbooks](https://github.com/best-devbooks)** — hand-curated book lists for other languages:
+
+- [Java](https://github.com/best-devbooks/java-books)
+- [Rust](https://github.com/best-devbooks/rust-books)
+- [TypeScript](https://github.com/best-devbooks/typescript-books)
+
 ## The list
 
 <table>
