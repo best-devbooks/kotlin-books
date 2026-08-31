@@ -176,7 +176,7 @@
         "url": "https://pragprog.com/titles/vskotlin/programming-kotlin/"
       }
     ],
-    "coverImage": "/assets/covers/programming-kotlin.svg",
+    "coverImage": "/assets/covers/programming-kotlin.jpg",
     "bestFor": "Developers who want an opinionated, idiomatic-style guide with strong coverage of DSLs and functional constructs."
   },
   {
@@ -202,7 +202,7 @@
         "url": "https://www.manning.com/books/functional-programming-in-kotlin"
       }
     ],
-    "coverImage": "/assets/covers/functional-programming-in-kotlin.svg",
+    "coverImage": "/assets/covers/functional-programming-in-kotlin.jpg",
     "bestFor": "Developers who want to learn functional programming rigorously, not just Kotlin's functional-flavored syntax."
   },
   {
@@ -299,7 +299,7 @@
         "url": "https://www.amazon.com/Kotlin-Design-Patterns-Best-Practices/dp/1801815720"
       }
     ],
-    "coverImage": "/assets/covers/kotlin-design-patterns-and-best-practices.svg",
+    "coverImage": "/assets/covers/kotlin-design-patterns-and-best-practices.jpg",
     "bestFor": "Java/C# developers who think in Gang-of-Four patterns and want a direct Kotlin translation."
   },
   {
@@ -325,7 +325,7 @@
         "url": "https://www.amazon.com/Kotlin-Cookbook-Problem-Focused-Ken-Kousen/dp/1492046671"
       }
     ],
-    "coverImage": "/assets/covers/kotlin-cookbook.svg",
+    "coverImage": "/assets/covers/kotlin-cookbook.jpg",
     "bestFor": "Working Kotlin developers who want a problem-focused reference to flip to, not a start-to-finish tutorial."
   },
   {
@@ -350,7 +350,7 @@
         "url": "https://www.amazon.com/Spring-Boot-Kotlin-Depth-Microservices/dp/B0DJGGPMRT"
       }
     ],
-    "coverImage": "/assets/covers/pro-spring-boot-3-with-kotlin.svg",
+    "coverImage": "/assets/covers/pro-spring-boot-3-with-kotlin.jpg",
     "bestFor": "Backend engineers building cloud-native Spring Boot services who want Kotlin-first guidance instead of Java-first material with Kotlin bolted on."
   }
 ]

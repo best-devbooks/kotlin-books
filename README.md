@@ -129,7 +129,7 @@ A visually driven, exercise-heavy introduction to Kotlin syntax and object-orien
 
 <table>
 <tr>
-<td width="140" valign="top"><img src="src/assets/covers/programming-kotlin.svg" alt="Cover of Programming Kotlin: Create Elegant, Expressive, and Performant JVM and Android Applications" width="120"></td>
+<td width="140" valign="top"><img src="src/assets/covers/programming-kotlin.jpg" alt="Cover of Programming Kotlin: Create Elegant, Expressive, and Performant JVM and Android Applications" width="120"></td>
 <td valign="top">
 
 **[Programming Kotlin: Create Elegant, Expressive, and Performant JVM and Android Applications](https://best-devbooks.github.io/kotlin-books/books/programming-kotlin/)**
@@ -147,7 +147,7 @@ Covers Kotlin's syntax and features for JVM and Android development, including f
 
 <table>
 <tr>
-<td width="140" valign="top"><img src="src/assets/covers/functional-programming-in-kotlin.svg" alt="Cover of Functional Programming in Kotlin" width="120"></td>
+<td width="140" valign="top"><img src="src/assets/covers/functional-programming-in-kotlin.jpg" alt="Cover of Functional Programming in Kotlin" width="120"></td>
 <td valign="top">
 
 **[Functional Programming in Kotlin](https://best-devbooks.github.io/kotlin-books/books/functional-programming-in-kotlin/)**
@@ -219,7 +219,7 @@ Approaches everyday Kotlin programming problems from a functional-programming pe
 
 <table>
 <tr>
-<td width="140" valign="top"><img src="src/assets/covers/kotlin-design-patterns-and-best-practices.svg" alt="Cover of Kotlin Design Patterns and Best Practices, Second Edition" width="120"></td>
+<td width="140" valign="top"><img src="src/assets/covers/kotlin-design-patterns-and-best-practices.jpg" alt="Cover of Kotlin Design Patterns and Best Practices, Second Edition" width="120"></td>
 <td valign="top">
 
 **[Kotlin Design Patterns and Best Practices, Second Edition](https://best-devbooks.github.io/kotlin-books/books/kotlin-design-patterns-and-best-practices/)**
@@ -237,7 +237,7 @@ Shows how to implement classic design patterns idiomatically in Kotlin and cover
 
 <table>
 <tr>
-<td width="140" valign="top"><img src="src/assets/covers/kotlin-cookbook.svg" alt="Cover of Kotlin Cookbook: A Problem-Focused Approach" width="120"></td>
+<td width="140" valign="top"><img src="src/assets/covers/kotlin-cookbook.jpg" alt="Cover of Kotlin Cookbook: A Problem-Focused Approach" width="120"></td>
 <td valign="top">
 
 **[Kotlin Cookbook: A Problem-Focused Approach](https://best-devbooks.github.io/kotlin-books/books/kotlin-cookbook/)**
@@ -255,7 +255,7 @@ A recipe-style reference covering practical Kotlin solutions for common problems
 
 <table>
 <tr>
-<td width="140" valign="top"><img src="src/assets/covers/pro-spring-boot-3-with-kotlin.svg" alt="Cover of Pro Spring Boot 3 with Kotlin: In-Depth Guide to Best Practices for Cloud-Native and Microservices Development" width="120"></td>
+<td width="140" valign="top"><img src="src/assets/covers/pro-spring-boot-3-with-kotlin.jpg" alt="Cover of Pro Spring Boot 3 with Kotlin: In-Depth Guide to Best Practices for Cloud-Native and Microservices Development" width="120"></td>
 <td valign="top">
 
 **[Pro Spring Boot 3 with Kotlin: In-Depth Guide to Best Practices for Cloud-Native and Microservices Development](https://best-devbooks.github.io/kotlin-books/books/pro-spring-boot-3-with-kotlin/)**
