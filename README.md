@@ -7,7 +7,7 @@ A curated, hand-picked list of the best Kotlin books for beginners, Android
 developers, and backend engineers — ranked by how genuinely useful each one
 is, not by publish date.
 
-**Live site: [best-dev-books.github.io/kotlin-books](https://best-dev-books.github.io/kotlin-books/)**
+**Live site: [best-devbooks.github.io/kotlin-books](https://best-devbooks.github.io/kotlin-books/)**
 
 ## The list
 
@@ -16,7 +16,7 @@ is, not by publish date.
 <td width="140" valign="top"><img src="src/assets/covers/kotlin-in-action.jpg" alt="Cover of Kotlin in Action, Second Edition" width="120"></td>
 <td valign="top">
 
-**[Kotlin in Action, Second Edition](https://best-dev-books.github.io/kotlin-books/books/kotlin-in-action/)**
+**[Kotlin in Action, Second Edition](https://best-devbooks.github.io/kotlin-books/books/kotlin-in-action/)**
 by Sebastian Aigner, Roman Elizarov, Svetlana Isakova, Dmitry Jemerov
 
 🏷️ **Best for:** Java developers who want the definitive, JetBrains-authored reference on idiomatic Kotlin, including coroutines.
@@ -34,7 +34,7 @@ Covers Kotlin language fundamentals, idioms, and Java interop, with dedicated ch
 <td width="140" valign="top"><img src="src/assets/covers/atomic-kotlin.jpg" alt="Cover of Atomic Kotlin" width="120"></td>
 <td valign="top">
 
-**[Atomic Kotlin](https://best-dev-books.github.io/kotlin-books/books/atomic-kotlin/)**
+**[Atomic Kotlin](https://best-devbooks.github.io/kotlin-books/books/atomic-kotlin/)**
 by Bruce Eckel, Svetlana Isakova
 
 🏷️ **Best for:** First-time Kotlin learners who want short, exercise-driven lessons rather than a dense reference.
@@ -52,7 +52,7 @@ Introduces Kotlin syntax and concepts through short, focused sections called "at
 <td width="140" valign="top"><img src="src/assets/covers/kotlin-coroutines-deep-dive.jpg" alt="Cover of Kotlin Coroutines: Deep Dive" width="120"></td>
 <td valign="top">
 
-**[Kotlin Coroutines: Deep Dive](https://best-dev-books.github.io/kotlin-books/books/kotlin-coroutines-deep-dive/)**
+**[Kotlin Coroutines: Deep Dive](https://best-devbooks.github.io/kotlin-books/books/kotlin-coroutines-deep-dive/)**
 by Marcin Moskała
 
 🏷️ **Best for:** Kotlin developers who already know the basics and need to actually understand structured concurrency, not just copy-paste coroutine code.
@@ -70,7 +70,7 @@ Explains Kotlin's built-in coroutine support and the kotlinx.coroutines library 
 <td width="140" valign="top"><img src="src/assets/covers/effective-kotlin.jpg" alt="Cover of Effective Kotlin: Best Practices, Second Edition" width="120"></td>
 <td valign="top">
 
-**[Effective Kotlin: Best Practices, Second Edition](https://best-dev-books.github.io/kotlin-books/books/effective-kotlin/)**
+**[Effective Kotlin: Best Practices, Second Edition](https://best-devbooks.github.io/kotlin-books/books/effective-kotlin/)**
 by Marcin Moskała
 
 🏷️ **Best for:** Teams and intermediate developers who want a concrete style guide for writing idiomatic, safe Kotlin.
@@ -88,7 +88,7 @@ A collection of concrete, item-by-item best practices for writing idiomatic, saf
 <td width="140" valign="top"><img src="src/assets/covers/kotlin-programming-big-nerd-ranch-guide.jpg" alt="Cover of Kotlin Programming: The Big Nerd Ranch Guide, Second Edition" width="120"></td>
 <td valign="top">
 
-**[Kotlin Programming: The Big Nerd Ranch Guide, Second Edition](https://best-dev-books.github.io/kotlin-books/books/kotlin-programming-big-nerd-ranch-guide/)**
+**[Kotlin Programming: The Big Nerd Ranch Guide, Second Edition](https://best-devbooks.github.io/kotlin-books/books/kotlin-programming-big-nerd-ranch-guide/)**
 by David Greenhalgh, Josh Skeen, Andrew Bailey
 
 🏷️ **Best for:** Beginners who want a classroom-tested, hands-on introduction to Kotlin syntax.
@@ -106,7 +106,7 @@ A hands-on introduction to Kotlin syntax and idioms, written by the Big Nerd Ran
 <td width="140" valign="top"><img src="src/assets/covers/head-first-kotlin.jpg" alt="Cover of Head First Kotlin: A Brain-Friendly Guide" width="120"></td>
 <td valign="top">
 
-**[Head First Kotlin: A Brain-Friendly Guide](https://best-dev-books.github.io/kotlin-books/books/head-first-kotlin/)**
+**[Head First Kotlin: A Brain-Friendly Guide](https://best-devbooks.github.io/kotlin-books/books/head-first-kotlin/)**
 by Dawn Griffiths, David Griffiths
 
 🏷️ **Best for:** Programming beginners who respond better to visuals, puzzles, and stories than to dry reference text.
@@ -124,7 +124,7 @@ A visually driven, exercise-heavy introduction to Kotlin syntax and object-orien
 <td width="140" valign="top"><img src="src/assets/covers/programming-kotlin.svg" alt="Cover of Programming Kotlin: Create Elegant, Expressive, and Performant JVM and Android Applications" width="120"></td>
 <td valign="top">
 
-**[Programming Kotlin: Create Elegant, Expressive, and Performant JVM and Android Applications](https://best-dev-books.github.io/kotlin-books/books/programming-kotlin/)**
+**[Programming Kotlin: Create Elegant, Expressive, and Performant JVM and Android Applications](https://best-devbooks.github.io/kotlin-books/books/programming-kotlin/)**
 by Venkat Subramaniam
 
 🏷️ **Best for:** Developers who want an opinionated, idiomatic-style guide with strong coverage of DSLs and functional constructs.
@@ -142,7 +142,7 @@ Covers Kotlin's syntax and features for JVM and Android development, including f
 <td width="140" valign="top"><img src="src/assets/covers/functional-programming-in-kotlin.svg" alt="Cover of Functional Programming in Kotlin" width="120"></td>
 <td valign="top">
 
-**[Functional Programming in Kotlin](https://best-dev-books.github.io/kotlin-books/books/functional-programming-in-kotlin/)**
+**[Functional Programming in Kotlin](https://best-devbooks.github.io/kotlin-books/books/functional-programming-in-kotlin/)**
 by Marco Vermeulen, Rúnar Bjarnason, Paul Chiusano
 
 🏷️ **Best for:** Developers who want to learn functional programming rigorously, not just Kotlin's functional-flavored syntax.
@@ -160,7 +160,7 @@ A Kotlin adaptation of "Functional Programming in Scala," covering functional da
 <td width="140" valign="top"><img src="src/assets/covers/android-programming-with-kotlin-for-beginners.jpg" alt="Cover of Android Programming with Kotlin for Beginners" width="120"></td>
 <td valign="top">
 
-**[Android Programming with Kotlin for Beginners](https://best-dev-books.github.io/kotlin-books/books/android-programming-with-kotlin-for-beginners/)**
+**[Android Programming with Kotlin for Beginners](https://best-devbooks.github.io/kotlin-books/books/android-programming-with-kotlin-for-beginners/)**
 by John Horton
 
 🏷️ **Best for:** Absolute beginners whose specific goal is building an Android app, not learning Kotlin in the abstract.
@@ -178,7 +178,7 @@ Teaches Kotlin fundamentals alongside Android app development by building three 
 <td width="140" valign="top"><img src="src/assets/covers/kotlin-for-android-app-development.jpg" alt="Cover of Kotlin for Android App Development" width="120"></td>
 <td valign="top">
 
-**[Kotlin for Android App Development](https://best-dev-books.github.io/kotlin-books/books/kotlin-for-android-app-development/)**
+**[Kotlin for Android App Development](https://best-devbooks.github.io/kotlin-books/books/kotlin-for-android-app-development/)**
 by Peter Sommerhoff
 
 🏷️ **Best for:** Developers who already know Android/Java and want to see the same patterns done idiomatically in Kotlin.
@@ -196,7 +196,7 @@ Covers Kotlin language features for production Android development through two c
 <td width="140" valign="top"><img src="src/assets/covers/the-joy-of-kotlin.jpg" alt="Cover of The Joy of Kotlin" width="120"></td>
 <td valign="top">
 
-**[The Joy of Kotlin](https://best-dev-books.github.io/kotlin-books/books/the-joy-of-kotlin/)**
+**[The Joy of Kotlin](https://best-devbooks.github.io/kotlin-books/books/the-joy-of-kotlin/)**
 by Pierre-Yves Saumont
 
 🏷️ **Best for:** Developers who've grasped functional programming basics and want a second, more applied take on writing Kotlin functionally.
@@ -214,7 +214,7 @@ Approaches everyday Kotlin programming problems from a functional-programming pe
 <td width="140" valign="top"><img src="src/assets/covers/kotlin-design-patterns-and-best-practices.svg" alt="Cover of Kotlin Design Patterns and Best Practices, Second Edition" width="120"></td>
 <td valign="top">
 
-**[Kotlin Design Patterns and Best Practices, Second Edition](https://best-dev-books.github.io/kotlin-books/books/kotlin-design-patterns-and-best-practices/)**
+**[Kotlin Design Patterns and Best Practices, Second Edition](https://best-devbooks.github.io/kotlin-books/books/kotlin-design-patterns-and-best-practices/)**
 by Alexey Soshin
 
 🏷️ **Best for:** Java/C# developers who think in Gang-of-Four patterns and want a direct Kotlin translation.
@@ -232,7 +232,7 @@ Shows how to implement classic design patterns idiomatically in Kotlin and cover
 <td width="140" valign="top"><img src="src/assets/covers/kotlin-cookbook.svg" alt="Cover of Kotlin Cookbook: A Problem-Focused Approach" width="120"></td>
 <td valign="top">
 
-**[Kotlin Cookbook: A Problem-Focused Approach](https://best-dev-books.github.io/kotlin-books/books/kotlin-cookbook/)**
+**[Kotlin Cookbook: A Problem-Focused Approach](https://best-devbooks.github.io/kotlin-books/books/kotlin-cookbook/)**
 by Ken Kousen
 
 🏷️ **Best for:** Working Kotlin developers who want a problem-focused reference to flip to, not a start-to-finish tutorial.
@@ -250,7 +250,7 @@ A recipe-style reference covering practical Kotlin solutions for common problems
 <td width="140" valign="top"><img src="src/assets/covers/pro-spring-boot-3-with-kotlin.svg" alt="Cover of Pro Spring Boot 3 with Kotlin: In-Depth Guide to Best Practices for Cloud-Native and Microservices Development" width="120"></td>
 <td valign="top">
 
-**[Pro Spring Boot 3 with Kotlin: In-Depth Guide to Best Practices for Cloud-Native and Microservices Development](https://best-dev-books.github.io/kotlin-books/books/pro-spring-boot-3-with-kotlin/)**
+**[Pro Spring Boot 3 with Kotlin: In-Depth Guide to Best Practices for Cloud-Native and Microservices Development](https://best-devbooks.github.io/kotlin-books/books/pro-spring-boot-3-with-kotlin/)**
 by Peter Späth, Felipe Gutierrez
 
 🏷️ **Best for:** Backend engineers building cloud-native Spring Boot services who want Kotlin-first guidance instead of Java-first material with Kotlin bolted on.
