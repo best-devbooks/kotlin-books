@@ -1,0 +1,92 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BookCard from "../components/BookCard.astro";
+import { site } from "../data/site";
+
+const books = (await getCollection("books")).sort((a, b) => b.data.year - a.data.year);
+
+const levels = ["beginner", "intermediate", "advanced"] as const;
+const allTags = [...new Set(books.flatMap((b) => b.data.tags))].sort();
+
+const year = new Date().getFullYear();
+const title = `Best Kotlin Books (${year}) — Hand-Picked Recommendations`;
+const description = site.description;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Best Kotlin Books",
+  itemListElement: books.map((book, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    url: `${site.url}/books/${book.slug}/`,
+    name: book.data.title,
+  })),
+};
+---
+
+<BaseLayout title={title} description={description} canonicalPath="/" jsonLd={jsonLd}>
+  <section class="hero">
+    <h1>Best Kotlin Books ({year})</h1>
+    <p>{site.description}</p>
+    <div class="filters" id="filters">
+      <button class="filter-btn active" data-filter="all" data-type="level">All levels</button>
+      {levels.map((lvl) => (
+        <button class="filter-btn" data-filter={lvl} data-type="level">{lvl}</button>
+      ))}
+    </div>
+    <div class="filters" id="tag-filters">
+      <button class="filter-btn active" data-filter="all" data-type="tag">All topics</button>
+      {allTags.map((tag) => (
+        <button class="filter-btn" data-filter={tag} data-type="tag">{tag}</button>
+      ))}
+    </div>
+  </section>
+
+  <section class="book-grid" id="book-grid">
+    {books.map((book) => (
+      <BookCard
+        slug={book.slug}
+        title={book.data.title}
+        authors={book.data.authors}
+        year={book.data.year}
+        level={book.data.level}
+        tags={book.data.tags}
+        summary={book.data.summary}
+        coverImage={book.data.coverImage}
+      />
+    ))}
+  </section>
+</BaseLayout>
+
+<script>
+  const grid = document.getElementById("book-grid");
+  const cards = () => Array.from(grid?.querySelectorAll<HTMLElement>(".book-card") ?? []);
+
+  let activeLevel = "all";
+  let activeTag = "all";
+
+  function applyFilters() {
+    for (const card of cards()) {
+      const level = card.dataset.level ?? "";
+      const tags = (card.dataset.tags ?? "").split(",");
+      const matchesLevel = activeLevel === "all" || level === activeLevel;
+      const matchesTag = activeTag === "all" || tags.includes(activeTag);
+      card.style.display = matchesLevel && matchesTag ? "" : "none";
+    }
+  }
+
+  document.querySelectorAll<HTMLButtonElement>(".filter-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const type = btn.dataset.type;
+      const filter = btn.dataset.filter ?? "all";
+      const group = btn.closest(".filters");
+      group?.querySelectorAll(".filter-btn").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      if (type === "level") activeLevel = filter;
+      if (type === "tag") activeTag = filter;
+      applyFilters();
+    });
+  });
+</script>

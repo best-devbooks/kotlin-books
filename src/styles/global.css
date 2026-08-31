@@ -1,0 +1,254 @@
+:root {
+  --color-bg: #0e0c14;
+  --color-surface: #16131f;
+  --color-border: #322c42;
+  --color-text: #ece9f3;
+  --color-text-muted: #9b93ab;
+  --color-accent: #7f52ff; /* Kotlin brand color */
+  --color-accent-hover: #9e7bff;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --max-width: 72rem;
+  --radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-accent-hover);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+header.site-header {
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.5rem 0;
+}
+
+header.site-header .container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.site-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.site-title span {
+  color: var(--color-accent-hover);
+}
+
+nav.site-nav a {
+  color: var(--color-text-muted);
+  margin-left: 1.25rem;
+  font-size: 0.9rem;
+}
+
+main {
+  padding: 2.5rem 0 4rem;
+}
+
+.hero {
+  padding: 2rem 0 2.5rem;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 2.5rem;
+}
+
+.hero h1 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  margin: 0 0 0.75rem;
+}
+
+.hero p {
+  color: var(--color-text-muted);
+  max-width: 42rem;
+  font-size: 1.05rem;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.filters button {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.filters button.active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.book-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.book-card img.cover {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+  background: #0a0812;
+}
+
+.book-card h2,
+.book-card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.book-card .meta {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: rgba(127, 82, 255, 0.15); /* same hue as --color-accent at 15% opacity */
+  color: var(--color-accent-hover);
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  margin-right: 0.35rem;
+}
+
+.book-card p.summary {
+  font-size: 0.92rem;
+  color: var(--color-text);
+  flex: 1;
+}
+
+.book-detail {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2.5rem;
+}
+
+.book-detail .cover-col img {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+}
+
+.book-detail .buy-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.book-detail .buy-links a {
+  background: var(--color-accent);
+  color: #fff;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.book-detail .buy-links a:hover {
+  background: var(--color-accent-hover);
+  text-decoration: none;
+}
+
+.book-detail .facts {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+}
+
+.book-detail .facts li {
+  padding: 0.25rem 0;
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.book-detail .review {
+  font-size: 1rem;
+}
+
+.book-detail .review h2 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 640px) {
+  .book-detail {
+    grid-template-columns: 1fr;
+  }
+  .book-detail .cover-col {
+    max-width: 200px;
+  }
+}
+
+footer.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding: 2rem 0;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+footer.site-footer a {
+  color: var(--color-text-muted);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}

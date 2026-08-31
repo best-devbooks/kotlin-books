@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://best-devbooks.github.io/kotlin-books/sitemap.xml

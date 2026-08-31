@@ -2,16 +2,24 @@
 name: Suggest a book
 about: Recommend a Kotlin book to add to the list
 title: "Add: <book title>"
-labels: book-suggestion
+labels: suggestion
 ---
 
-**Book title & author**
+**Book title**
 
-**Publisher & year**
+**Author(s)**
 
-**ISBN-13** (if known)
+**Why does this book belong on the list?**
+(You should have actually read it. What makes it worth recommending over
+what's already listed?)
 
-**Why should this be on the list?**
-What does it cover, and who is it for? (Genuine opinion, not jacket copy.)
+**Level**
+beginner / intermediate / advanced
 
-**Have you read it yourself?**
+**Link to publisher or purchase page**
+
+---
+
+Prefer opening a PR instead? Add a Markdown file under
+`src/content/books/<slug>.md` following the schema in `src/content/config.ts`,
+plus a cover image under `public/covers/`. See `CONTRIBUTING.md`.

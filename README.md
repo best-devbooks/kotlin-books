@@ -1,13 +1,12 @@
 # Best Kotlin Books
 
-[![Built with Eleventy](https://img.shields.io/badge/built%20with-Eleventy-black?logo=eleventy)](https://www.11ty.dev/)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-
 A curated, hand-picked list of the best Kotlin books for beginners, Android
 developers, and backend engineers — ranked by how genuinely useful each one
 is, not by publish date.
 
 **Live site: [best-devbooks.github.io/kotlin-books](https://best-devbooks.github.io/kotlin-books/)**
+
+📚 Know a book that belongs here? [Suggest it](https://github.com/best-devbooks/kotlin-books/issues/new?template=suggest-a-book.md) — takes about two minutes, no PR required.
 
 ## More book lists
 
@@ -21,7 +20,7 @@ Part of **[best-devbooks](https://github.com/best-devbooks)** — hand-curated b
 
 <table>
 <tr>
-<td width="140" valign="top"><img src="src/assets/covers/kotlin-in-action.jpg" alt="Cover of Kotlin in Action, Second Edition" width="120"></td>
+<td width="140" valign="top"><img src="public/covers/kotlin-in-action.jpg" alt="Cover of Kotlin in Action, Second Edition" width="120"></td>
 <td valign="top">
 
 **[Kotlin in Action, Second Edition](https://best-devbooks.github.io/kotlin-books/books/kotlin-in-action/)**
@@ -39,7 +38,7 @@ Covers Kotlin language fundamentals, idioms, and Java interop, with dedicated ch
 
 <table>
 <tr>
-<td width="140" valign="top"><img src="src/assets/covers/atomic-kotlin.jpg" alt="Cover of Atomic Kotlin" width="120"></td>
+<td width="140" valign="top"><img src="public/covers/atomic-kotlin.jpg" alt="Cover of Atomic Kotlin" width="120"></td>
 <td valign="top">
 
 **[Atomic Kotlin](https://best-devbooks.github.io/kotlin-books/books/atomic-kotlin/)**
@@ -57,7 +56,7 @@ Introduces Kotlin syntax and concepts through short, focused sections called "at
 
 <table>
 <tr>
-<td width="140" valign="top"><img src="src/assets/covers/kotlin-coroutines-deep-dive.jpg" alt="Cover of Kotlin Coroutines: Deep Dive" width="120"></td>
+<td width="140" valign="top"><img src="public/covers/kotlin-coroutines-deep-dive.jpg" alt="Cover of Kotlin Coroutines: Deep Dive" width="120"></td>
 <td valign="top">
 
 **[Kotlin Coroutines: Deep Dive](https://best-devbooks.github.io/kotlin-books/books/kotlin-coroutines-deep-dive/)**
@@ -75,7 +74,7 @@ Explains Kotlin's built-in coroutine support and the kotlinx.coroutines library 
 
 <table>
 <tr>
-<td width="140" valign="top"><img src="src/assets/covers/effective-kotlin.jpg" alt="Cover of Effective Kotlin: Best Practices, Second Edition" width="120"></td>
+<td width="140" valign="top"><img src="public/covers/effective-kotlin.jpg" alt="Cover of Effective Kotlin: Best Practices, Second Edition" width="120"></td>
 <td valign="top">
 
 **[Effective Kotlin: Best Practices, Second Edition](https://best-devbooks.github.io/kotlin-books/books/effective-kotlin/)**
@@ -93,7 +92,7 @@ A collection of concrete, item-by-item best practices for writing idiomatic, saf
 
 <table>
 <tr>
-<td width="140" valign="top"><img src="src/assets/covers/kotlin-programming-big-nerd-ranch-guide.jpg" alt="Cover of Kotlin Programming: The Big Nerd Ranch Guide, Second Edition" width="120"></td>
+<td width="140" valign="top"><img src="public/covers/kotlin-programming-big-nerd-ranch-guide.jpg" alt="Cover of Kotlin Programming: The Big Nerd Ranch Guide, Second Edition" width="120"></td>
 <td valign="top">
 
 **[Kotlin Programming: The Big Nerd Ranch Guide, Second Edition](https://best-devbooks.github.io/kotlin-books/books/kotlin-programming-big-nerd-ranch-guide/)**
@@ -111,7 +110,7 @@ A hands-on introduction to Kotlin syntax and idioms, written by the Big Nerd Ran
 
 <table>
 <tr>
-<td width="140" valign="top"><img src="src/assets/covers/head-first-kotlin.jpg" alt="Cover of Head First Kotlin: A Brain-Friendly Guide" width="120"></td>
+<td width="140" valign="top"><img src="public/covers/head-first-kotlin.jpg" alt="Cover of Head First Kotlin: A Brain-Friendly Guide" width="120"></td>
 <td valign="top">
 
 **[Head First Kotlin: A Brain-Friendly Guide](https://best-devbooks.github.io/kotlin-books/books/head-first-kotlin/)**
@@ -129,7 +128,7 @@ A visually driven, exercise-heavy introduction to Kotlin syntax and object-orien
 
 <table>
 <tr>
-<td width="140" valign="top"><img src="src/assets/covers/programming-kotlin.jpg" alt="Cover of Programming Kotlin: Create Elegant, Expressive, and Performant JVM and Android Applications" width="120"></td>
+<td width="140" valign="top"><img src="public/covers/programming-kotlin.jpg" alt="Cover of Programming Kotlin: Create Elegant, Expressive, and Performant JVM and Android Applications" width="120"></td>
 <td valign="top">
 
 **[Programming Kotlin: Create Elegant, Expressive, and Performant JVM and Android Applications](https://best-devbooks.github.io/kotlin-books/books/programming-kotlin/)**
@@ -147,7 +146,7 @@ Covers Kotlin's syntax and features for JVM and Android development, including f
 
 <table>
 <tr>
-<td width="140" valign="top"><img src="src/assets/covers/functional-programming-in-kotlin.jpg" alt="Cover of Functional Programming in Kotlin" width="120"></td>
+<td width="140" valign="top"><img src="public/covers/functional-programming-in-kotlin.jpg" alt="Cover of Functional Programming in Kotlin" width="120"></td>
 <td valign="top">
 
 **[Functional Programming in Kotlin](https://best-devbooks.github.io/kotlin-books/books/functional-programming-in-kotlin/)**
@@ -165,7 +164,7 @@ A Kotlin adaptation of "Functional Programming in Scala," covering functional da
 
 <table>
 <tr>
-<td width="140" valign="top"><img src="src/assets/covers/android-programming-with-kotlin-for-beginners.jpg" alt="Cover of Android Programming with Kotlin for Beginners" width="120"></td>
+<td width="140" valign="top"><img src="public/covers/android-programming-with-kotlin-for-beginners.jpg" alt="Cover of Android Programming with Kotlin for Beginners" width="120"></td>
 <td valign="top">
 
 **[Android Programming with Kotlin for Beginners](https://best-devbooks.github.io/kotlin-books/books/android-programming-with-kotlin-for-beginners/)**
@@ -183,7 +182,7 @@ Teaches Kotlin fundamentals alongside Android app development by building three 
 
 <table>
 <tr>
-<td width="140" valign="top"><img src="src/assets/covers/kotlin-for-android-app-development.jpg" alt="Cover of Kotlin for Android App Development" width="120"></td>
+<td width="140" valign="top"><img src="public/covers/kotlin-for-android-app-development.jpg" alt="Cover of Kotlin for Android App Development" width="120"></td>
 <td valign="top">
 
 **[Kotlin for Android App Development](https://best-devbooks.github.io/kotlin-books/books/kotlin-for-android-app-development/)**
@@ -201,7 +200,7 @@ Covers Kotlin language features for production Android development through two c
 
 <table>
 <tr>
-<td width="140" valign="top"><img src="src/assets/covers/the-joy-of-kotlin.jpg" alt="Cover of The Joy of Kotlin" width="120"></td>
+<td width="140" valign="top"><img src="public/covers/the-joy-of-kotlin.jpg" alt="Cover of The Joy of Kotlin" width="120"></td>
 <td valign="top">
 
 **[The Joy of Kotlin](https://best-devbooks.github.io/kotlin-books/books/the-joy-of-kotlin/)**
@@ -219,7 +218,7 @@ Approaches everyday Kotlin programming problems from a functional-programming pe
 
 <table>
 <tr>
-<td width="140" valign="top"><img src="src/assets/covers/kotlin-design-patterns-and-best-practices.jpg" alt="Cover of Kotlin Design Patterns and Best Practices, Second Edition" width="120"></td>
+<td width="140" valign="top"><img src="public/covers/kotlin-design-patterns-and-best-practices.jpg" alt="Cover of Kotlin Design Patterns and Best Practices, Second Edition" width="120"></td>
 <td valign="top">
 
 **[Kotlin Design Patterns and Best Practices, Second Edition](https://best-devbooks.github.io/kotlin-books/books/kotlin-design-patterns-and-best-practices/)**
@@ -237,7 +236,7 @@ Shows how to implement classic design patterns idiomatically in Kotlin and cover
 
 <table>
 <tr>
-<td width="140" valign="top"><img src="src/assets/covers/kotlin-cookbook.jpg" alt="Cover of Kotlin Cookbook: A Problem-Focused Approach" width="120"></td>
+<td width="140" valign="top"><img src="public/covers/kotlin-cookbook.jpg" alt="Cover of Kotlin Cookbook: A Problem-Focused Approach" width="120"></td>
 <td valign="top">
 
 **[Kotlin Cookbook: A Problem-Focused Approach](https://best-devbooks.github.io/kotlin-books/books/kotlin-cookbook/)**
@@ -255,7 +254,7 @@ A recipe-style reference covering practical Kotlin solutions for common problems
 
 <table>
 <tr>
-<td width="140" valign="top"><img src="src/assets/covers/pro-spring-boot-3-with-kotlin.jpg" alt="Cover of Pro Spring Boot 3 with Kotlin: In-Depth Guide to Best Practices for Cloud-Native and Microservices Development" width="120"></td>
+<td width="140" valign="top"><img src="public/covers/pro-spring-boot-3-with-kotlin.jpg" alt="Cover of Pro Spring Boot 3 with Kotlin: In-Depth Guide to Best Practices for Cloud-Native and Microservices Development" width="120"></td>
 <td valign="top">
 
 **[Pro Spring Boot 3 with Kotlin: In-Depth Guide to Best Practices for Cloud-Native and Microservices Development](https://best-devbooks.github.io/kotlin-books/books/pro-spring-boot-3-with-kotlin/)**
@@ -275,19 +274,22 @@ Each book's page has a full write-up of why it made the list and where to buy it
 
 ## Running locally
 
-This is a static site built with [Eleventy](https://www.11ty.dev/) — no
-Ruby, no heavyweight framework.
+This is a static site built with [Astro](https://astro.build).
 
 ```sh
 npm install
-npm run dev    # serves locally with live reload
-npm run build  # builds the production site to _site/
+npm run dev     # serves locally with live reload
+npm run build   # type-checks and builds the production site to dist/
+npm run preview # preview the production build
 ```
 
 ## Contributing
 
 Spotted an outdated edition, a broken link, or think a book deserves a spot
 on the list? See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+- **No git needed:** open a ["Suggest a book" issue](https://github.com/best-devbooks/kotlin-books/issues/new?template=suggest-a-book.md).
+- **Direct PR:** add one file under `src/content/books/`, add a cover under `public/covers/`, open a PR.
 
 ## License
 

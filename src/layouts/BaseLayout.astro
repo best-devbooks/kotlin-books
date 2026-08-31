@@ -1,0 +1,75 @@
+---
+import "../styles/global.css";
+import { site } from "../data/site";
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalPath: string; // path relative to site base, e.g. "/" or "/books/foo/"
+  ogImage?: string; // absolute URL
+  jsonLd?: Record<string, unknown>;
+}
+
+const { title, description, canonicalPath, ogImage, jsonLd } = Astro.props;
+
+const canonicalUrl = new URL(canonicalPath.replace(/^\//, ""), site.url + "/").toString();
+const defaultOgImage = new URL("og-default.png", site.url + "/").toString();
+const resolvedOgImage = ogImage ?? defaultOgImage;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="bIGoozrasFhjwHR0CW__oi_irqCpf7wA8lmHA1jXRFs"
+    />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="icon" type="image/svg+xml" href={`${site.base}/favicon.svg`} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={resolvedOgImage} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={resolvedOgImage} />
+
+    {
+      jsonLd && (
+        <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} is:inline />
+      )
+    }
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="site-title" href={`${site.base}/`}>
+          Best <span>Kotlin</span> Books
+        </a>
+        <nav class="site-nav">
+          <a href={site.repo} target="_blank" rel="noopener noreferrer">Contribute</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; {new Date().getFullYear()} best-devbooks &mdash; MIT licensed. Book
+          suggestions welcome via <a href={site.repo}>pull request</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

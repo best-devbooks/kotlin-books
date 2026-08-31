@@ -1,0 +1,72 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { site } from "../../data/site";
+
+export async function getStaticPaths() {
+  const books = await getCollection("books");
+  return books.map((book) => ({
+    params: { slug: book.slug },
+    props: { book },
+  }));
+}
+
+interface Props {
+  book: CollectionEntry<"books">;
+}
+
+const { book } = Astro.props;
+const { Content } = await book.render();
+const { title, authors, year, publisher, isbn13, level, tags, summary, bestFor, coverImage, buyLinks } =
+  book.data;
+
+const pageTitle = `${title} — Review & Summary | Best Kotlin Books`;
+const canonicalPath = `/books/${book.slug}/`;
+const coverUrl = new URL(coverImage.replace(/^\//, ""), `${site.url}/`).toString();
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Book",
+  name: title,
+  author: authors.map((name) => ({ "@type": "Person", name })),
+  datePublished: String(year),
+  publisher: { "@type": "Organization", name: publisher },
+  isbn: isbn13,
+  image: coverUrl,
+  description: summary,
+};
+---
+
+<BaseLayout title={pageTitle} description={summary} canonicalPath={canonicalPath} ogImage={coverUrl} jsonLd={jsonLd}>
+  <a class="back-link" href={`${site.base}/`}>&larr; All Kotlin books</a>
+
+  <article class="book-detail">
+    <div class="cover-col">
+      <img src={`${site.base}${coverImage}`} alt={`Cover of ${title}`} />
+      <div class="buy-links">
+        {buyLinks.map((link) => (
+          <a href={link.url} target="_blank" rel="noopener noreferrer nofollow">
+            {link.label}
+          </a>
+        ))}
+      </div>
+    </div>
+    <div>
+      <div>
+        <span class="badge">{level}</span>
+        {tags.map((tag) => <span class="badge">{tag}</span>)}
+      </div>
+      <h1>{title}</h1>
+      <p class="meta">{authors.join(", ")} &middot; {publisher} &middot; {year}</p>
+      <p><strong>Best for:</strong> {bestFor}</p>
+      <ul class="facts">
+        <li>ISBN-13: {isbn13}</li>
+        <li>Level: {level}</li>
+        <li>Published: {year}</li>
+      </ul>
+      <div class="review">
+        <Content />
+      </div>
+    </div>
+  </article>
+</BaseLayout>

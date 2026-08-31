@@ -1,0 +1,29 @@
+---
+import { site } from "../data/site";
+
+interface Props {
+  slug: string;
+  title: string;
+  authors: string[];
+  year: number;
+  level: "beginner" | "intermediate" | "advanced";
+  tags: string[];
+  summary: string;
+  coverImage: string;
+}
+
+const { slug, title, authors, year, level, tags, summary, coverImage } = Astro.props;
+---
+
+<article class="book-card" data-level={level} data-tags={tags.join(",")}>
+  <a href={`${site.base}/books/${slug}/`}>
+    <img class="cover" src={`${site.base}${coverImage}`} alt={`Cover of ${title}`} loading="lazy" />
+  </a>
+  <div>
+    <span class="badge">{level}</span>
+    {tags.slice(0, 2).map((tag) => <span class="badge">{tag}</span>)}
+  </div>
+  <h2><a href={`${site.base}/books/${slug}/`}>{title}</a></h2>
+  <p class="meta">{authors.join(", ")} &middot; {year}</p>
+  <p class="summary">{summary}</p>
+</article>

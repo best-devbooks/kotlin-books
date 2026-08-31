@@ -1,13 +1,15 @@
 {
   "name": "best-kotlin-books",
   "version": "1.0.0",
-  "description": "A hand-picked, regularly updated list of the best Kotlin books for beginners, Android developers, and server-side/backend developers.",
+  "description": "A curated, hand-picked list of the best Kotlin books for beginners, Android developers, and backend engineers.",
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "eleventy --serve",
-    "build": "eleventy",
-    "clean": "rm -rf _site"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "keywords": [
     "kotlin",
@@ -18,7 +20,11 @@
   ],
   "author": "",
   "license": "MIT",
+  "dependencies": {
+    "astro": "^5.1.1"
+  },
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.6"
+    "@astrojs/check": "^0.9.4",
+    "typescript": "^5.7.2"
   }
 }

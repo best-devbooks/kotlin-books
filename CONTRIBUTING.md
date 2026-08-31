@@ -1,31 +1,64 @@
 # Contributing
 
-Suggestions for books to add, remove, or update are welcome.
+Thanks for helping keep this list useful. Contributions are welcome as a
+2-minute PR: add one Markdown file, open a PR.
 
-## Suggesting a book
+## Ground rules
 
-Open an issue using the "Suggest a book" template, or open a pull request
-directly:
+- You must have actually read the book. No jacket-copy summaries, no books
+  you skimmed.
+- No paid placements, no affiliate-only submissions, no self-promotion of a
+  book you wrote without disclosing that in the PR description.
+- The review body must be **original writing** — your own take on why the
+  book is worth reading, who it's for, and how it compares to others on the
+  list. Do not paste publisher/back-cover copy.
+- Buy links should point to the publisher or a neutral retailer, not an
+  affiliate link.
 
-1. Add an entry to `src/_data/books.json` following the existing shape
-   (`slug`, `title`, `authors`, `year`, `publisher`, `isbn13`, `level`,
-   `tags`, `summary`, `whyRecommended`, `buyLinks`, `coverImage`).
-2. If you're adding a cover image, place it under
-   `src/assets/covers/<slug>.jpg` (or `.svg` if no photographable cover is
-   available) — see `tasks/05-book-cover-images.md` for how existing covers
-   were sourced (Open Library / Google Books, self-hosted, not hotlinked).
-3. `whyRecommended` should be genuine, original commentary — not text
-   copied from the publisher's jacket description.
-4. Run `npm run build` locally and confirm the new book's page renders
-   correctly.
+## Adding a book
 
-## Reporting an issue
+1. Add `src/content/books/<slug>.md`, where `<slug>` is a kebab-case short
+   form of the title (e.g. `kotlin-in-action.md`).
+2. Fill in the frontmatter — see the schema enforced in
+   `src/content/config.ts`:
 
-Outdated editions, dead links, incorrect ISBNs, or factual errors — please
-open an issue with a link to the affected page.
+   ```yaml
+   ---
+   title: ""
+   authors: ["Full Name"]
+   year: 2024
+   publisher: ""
+   isbn13: ""
+   level: beginner # beginner | intermediate | advanced
+   tags: ["topic-tag"]
+   summary: "One sentence, what the book covers."
+   bestFor: "Who this book is for, one sentence."
+   coverImage: "/covers/<slug>.jpg"
+   buyLinks:
+     - label: "Publisher"
+       url: ""
+   ---
+   ```
 
-## What we're not looking for
+3. Write the review body below the frontmatter: why you recommend it, what
+   it covers in more depth, who should (and shouldn't) read it.
+4. Add a cover image at `public/covers/<slug>.jpg` (or `.svg`). Use the
+   publisher's official cover; don't hotlink it from another site — commit
+   the file itself.
+5. Run `npm install && npm run build` locally to confirm the entry passes
+   schema validation.
+6. Open a PR. A malformed entry will fail CI (the zod schema in
+   `src/content/config.ts` rejects it at build time).
 
-- Paid placement or promotional listings — every book on this list is here
-  because it's genuinely useful, not because of a sponsorship.
-- Books you haven't actually read/used.
+## Editing or removing a book
+
+Same process — edit the Markdown file directly, or open an issue explaining
+why an existing entry should come out (e.g. it's outdated, or a better
+edition superseded it).
+
+## Local development
+
+```bash
+npm install
+npm run dev
+```
